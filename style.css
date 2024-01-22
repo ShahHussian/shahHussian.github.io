@@ -1,0 +1,148 @@
+/*index page*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Mynerve&family=Oswald:wght@200..700&family=Righteous&family=Satisfy&family=Shadows+Into+Light&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.sideBar {
+  background-color: rgb(218, 220, 220);
+  font-family: "Work Sans", sans-serif;
+  transition: transform 0.3 ease-in;
+}
+.sideBar nav {
+  padding: 45px;
+}
+.sideBar nav li {
+  list-style: none;
+  font-size: 25px;
+  padding: 10px 0;
+}
+.sideBar nav ul li a {
+  text-decoration: none;
+  color: rgb(69, 67, 63);
+}
+.main {
+  background-color: rgb(234, 236, 235);
+  width: 80vw;
+}
+.container {
+  display: flex;
+}
+.info {
+  background-color: rgb(234, 236, 235);
+  height: 78vh;
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.devInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 25px;
+  font-family: "Gloria Hallelujah", sans-serif;
+}
+.name {
+  font-size: 65px;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: bold;
+  color: yellowgreen;
+}
+.about {
+  font-size: 34px;
+  font-family: "Cantarell", sans-serif;
+}
+.mySelf {
+  font-size: 18px;
+  font-family: "Cantarell", sans-serif;
+}
+
+.btns {
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgb(4, 169, 123);
+  border: none !important;
+  color: wheat;
+  font-weight: bold;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.btns:hover {
+  background-color: rgb(202, 242, 150);
+  color: rgb(4, 169, 123);
+}
+.divPic img {
+  height: 78vh;
+}
+
+/* Contact Page */
+
+.contactForm {
+  padding: 0 35px;
+  padding-top: 150px;
+  font-family: "Gloria Hallelujah", sans-serif;
+}
+.contactForm h1 {
+  font-family: "Gloria Hallelujah", sans-serif;
+  text-align: center;
+}
+.contactForm form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm form div input {
+  padding: 8px 2px;
+  margin: 6px 0 0 0;
+  border-radius: 6px;
+  width: 40%;
+}
+#form-check {
+  flex-direction: row;
+}
+#form-check-input {
+  width: 25px !important;
+  margin: 3px 0 !important;
+}
+/*Blogg Page*/
+.blogItem {
+  margin: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+.blogItem h2 {
+  font-family: "Work Sans", sans-serif;
+}
+.blogContainer h1 {
+  font-family: "Work Sans", sans-serif;
+  margin: 20px;
+}
+.blogItem p {
+  padding: 10px 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 1100px) {
+  /* .sideBar {
+    transform: translate(-231px, 0px);
+    position: absolute;
+  } */
+}
+/* navbar */
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+.cross {
+  margin-left: 160px;
+}
+.sideBarGo {
+  transform: translate(-231px, 0px);
+  position: absolute;
+}
