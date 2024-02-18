@@ -178,13 +178,13 @@ sup {
 }
 
 a {
-  color: #f85c70;
+  /* color: #f85c70; */
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #f51330;
+  /* color: #f51330; */
   text-decoration: none;
 }
 
@@ -2942,14 +2942,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f85c70;
-  border-color: #f85c70;
+  background-color: #2f6c80;
+  border-color: #2f6c80;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: #4293ae;
+  border-color: #4293ae;
 }
 
 .btn-primary:focus,
@@ -3425,14 +3425,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-danger {
-  color: #f85c70;
-  border-color: #f85c70;
+  color: #2f6c80;
+  border-color: #2f6c80;
 }
 
 .btn-outline-danger:hover {
   color: #fff;
-  background-color: #f85c70;
-  border-color: #f85c70;
+  background-color: #08b4ec;
+  border-color: #08b4ec;
 }
 
 .btn-outline-danger:focus,
@@ -4749,11 +4749,13 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color: white !important;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  color: white !important;
 }
 
 .nav-link.disabled {
@@ -4838,6 +4840,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
+  background-color: #2f6c80 !important;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7513,14 +7516,16 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f85c70 !important;
+  color: #fff;
+  background-color: #08b4ec !important;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #f62b45 !important;
+  color: #fff;
+  background-color: #2f6c80 !important;
 }
 
 .bg-secondary {
@@ -7567,8 +7572,8 @@ button.bg-warning:focus {
   background-color: #ff574f !important;
 }
 
-.bg-danger {
-  background-color: #f85c70 !important;
+.bg-danger1 {
+  background-color: #08b4ec !important;
 }
 
 a.bg-danger:hover,
@@ -11202,13 +11207,13 @@ a.text-warning:focus {
   color: #ff3f36 !important;
 }
 
-.text-danger {
-  color: #f85c70 !important;
+.text-danger1 {
+  color: #08b4ec !important;
 }
 
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #f51330 !important;
+  color: #08b4ec !important;
 }
 
 .text-light {
@@ -11395,7 +11400,7 @@ p {
   display: block;
   width: 25px;
   height: 1.5px;
-  background-color: #f85c70;
+  background-color: #08b4ec;
 }
 
 .breadcrumb {
@@ -11798,9 +11803,9 @@ pre .code {
   font-family: "Dosis", "Open Sans", sans-serif;
 }
 
-.navbar .nav-link.active {
-  color: #f85c70 !important;
-}
+/* .navbar .nav-link.active {
+  color: #08ade391 !important;
+} */
 
 .navbar .brand {
   text-align: center;
@@ -11808,7 +11813,7 @@ pre .code {
 
 .navbar .brand .brand-img {
   position: absolute;
-  left: 50%;
+  left: 6%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -11821,7 +11826,25 @@ pre .code {
   z-index: 2;
   box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
   width: 170px;
-  border-radius: 30%;
+  border-radius: 100%;
+  display: none;
+}
+.navbar .brand .brand-img1 {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -weblit-transform: translate(-50%, -50%);
+  border: 1px solid white;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  -weblit-transition: 0.5s !important;
+  z-index: 2;
+  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  width: 8%;
+  border-radius: 100%;
 }
 
 .navbar .brand .brand-txt {
@@ -12083,7 +12106,39 @@ pre .code {
   content: "";
   width: 20px;
   height: 2px;
-  background: #f85c70;
+  background: #08b4ec;
   display: block;
   margin-top: 10px;
+}
+
+.nav2 {
+  position: absolute;
+  left: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -weblit-transform: translate(-50%, -50%);
+  border: 1px solid white;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  -weblit-transition: 0.5s !important;
+  z-index: 2;
+  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  width: 110px;
+  border-radius: 100%;
+}
+#navbarNav {
+  justify-content: flex-end !important;
+}
+
+.stk {
+  position: sticky !important;
+  top: 0;
+  z-index: 1020;
+}
+.card {
+  border: 5px solid rgb(5 187 239 / 13%) !important;
+}
+.nav-gap {
+  gap: 100px !important;
 }
